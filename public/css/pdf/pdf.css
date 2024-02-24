@@ -1,0 +1,120 @@
+.item_container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.item_container .single_item {
+  background-color: #feffcf;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+
+.item_container .single_item .img_items > div,
+.item_container .single_item .sl_number {
+  padding: 7px;
+  display: block !important;
+  width: 100%;
+}
+.single_item .img_items img {
+  width: 120px;
+  object-fit: contain;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+.single_item .text_title {
+  color: #cf2733 !important;
+  font-weight: 900;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+.single_item .item_name {
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 29px;
+}
+.single_item .text_col .p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.single_item .text_col .p.ingredienser_text {
+  margin-bottom: 10px !important;
+}
+.single_item {
+  position: relative;
+}
+.single_item .text_col {
+  display: inline-block;
+}
+.single_item .logo_col {
+  right: 0;
+  bottom: 0;
+  max-width: 250px;
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+}
+.single_item .logo_col .price_weight p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.single_item .logo_col .price_weight h4 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.price_weight {
+  width: 100%;
+}
+.single_item .logo_col img {
+  height: 90px;
+  object-fit: contain;
+}
+.single_item .logo_col .content_details {
+  border: 1px solid #000;
+  width: 125px;
+  padding: 5px;
+  display: inline-block !important;
+  background-color: #fff !important;
+  text-align: left;
+}
+.single_item .logo_col .weight {
+  background-color: yellow !important;
+}
+.item_container table td {
+  border: none !important;
+  vertical-align: top;
+  margin-left: 0 !important;
+  border-left: 0 !important;
+}
+.single_item table .img_number {
+  max-width: 120px;
+  width: 120px;
+  margin-right: 12px;
+}
+.single_item table .headin_items {
+  max-width: 400px;
+  width: 100%;
+}
+.single_item table .margin_right {
+  margin-right: 5px;
+  display: inline-block;
+}
+.single_item .small_text_main {
+  max-width: 250px;
+}
+.single_item .logo_pricing {
+
+  text-align: right;
+}
+
+
+
+
+table {page-break-inside: avoid;}

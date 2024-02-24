@@ -1,0 +1,7 @@
+<?php 
+return  'ds';
+if(isset($_GET['id']) && $_GET['id'] == 1){
+    return  do_shortcode('[show_forms]');
+}else{
+    return  do_shortcode('[show_links]');
+}
