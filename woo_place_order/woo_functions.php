@@ -69,7 +69,7 @@ function add_account_orders_column( $columns ){
 add_action( 'woocommerce_my_account_my_orders_column_custom-column', 'add_account_orders_column_rows' );
 function add_account_orders_column_rows( $order ) {
     // Example with a custom field
-    if ( $value = $order->get_meta( 'Önskat leveransdatum (åååå-mm-dd)' ) ) {
+    if ( $value = get_post_meta($order->get_id(),'Önskat leveransdatum (åååå-mm-dd)',true)) {
         esc_html_e( $value );
     } else {
         printf( '<small>%s</small>', __("no value") );

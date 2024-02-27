@@ -344,8 +344,10 @@ if(isset($_POST['order_submit'])){
                         <?php
                         if(!empty($last_order_master_array))
                         {
+							  $td='';
                           foreach($last_order_master_array as $last_order_master_single)
                           {
+							   $td=$td.'<td></td>';
                             ?><th><?=$last_order_master_single['order_date']?></th><?php
                           }
                         }
@@ -361,7 +363,7 @@ if(isset($_POST['order_submit'])){
 
                    $categories = get_terms( 'product_cat', $args );
                    foreach($categories as $term){
-                       echo '       <tr class="well"><td></td><td colspan="3" style=""><strong class="color__heading" style="color:green;">'.$term->name.'</strong></td></tr>';
+                       echo '       <tr class="well"><td></td><td colspan="3" style=""><strong class="color__heading" style="color:green;">'.$term->name.'</strong></td><td></td><td></td><td></td>'. $td.'';
                         $args2 = array(  
                             'post_type' => 'product',
                             'post_status' => 'publish',

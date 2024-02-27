@@ -51,7 +51,7 @@ foreach(get_the_contest_encoder_it_ltd() as $key=>$value)
             </div>
         </div>
         <div class="row" style="background-color: whitesmoke;margin: 5px 2px">
-            <?=include plugin_dir_path( __FILE__ ).'/product_image_grid.php';?>
+            <?php include plugin_dir_path( __FILE__ ).'/product_image_grid.php';?>
         </div>
     </div>
 
