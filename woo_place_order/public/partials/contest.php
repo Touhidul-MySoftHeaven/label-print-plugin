@@ -50,8 +50,11 @@ foreach(get_the_contest_encoder_it_ltd() as $key=>$value)
 </table>
             </div>
         </div>
-        <div class="row" style="background-color: whitesmoke;margin: 5px 2px">
-            <?php include plugin_dir_path( __FILE__ ).'/product_image_grid.php';?>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><img src="<?=plugins_url('images/champion-image.png', __FILE__ )?>" alt="" class="w-75"></div>
+            <div class="col-md-4"></div>
+            
         </div>
     </div>
 

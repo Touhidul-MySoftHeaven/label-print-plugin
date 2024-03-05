@@ -267,7 +267,7 @@ font-size: 14px;
        }
        $single_order['product_id']=$temp_product_id;
        $single_order['quantity']=$temp_quantity;
-
+       $single_order['order_id']=$last_five_orders_id->ID;
        array_push($last_order_master_array,$single_order);
      }
     
@@ -348,7 +348,7 @@ if(isset($_POST['order_submit'])){
                           foreach($last_order_master_array as $last_order_master_single)
                           {
 							   $td=$td.'<td></td>';
-                            ?><th><?=$last_order_master_single['order_date']?></th><?php
+                            ?><th><a href="<?=site_url('/my-account/view-order').'/'.$last_order_master_single['order_id']?>"><?=$last_order_master_single['order_date']?></a></th><?php
                           }
                         }
                         ?>
